@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="/css/about.css">
     <link rel="stylesheet" href="/css/services.css">
     <link rel="stylesheet" href="/css/testimonials.css">
+    <link rel="stylesheet" href="/css/contact.css">
     <link rel="stylesheet" href="/css/swiper.css">
     <!--FONTS-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -65,7 +66,7 @@
     <div class="divider-1"></div>
 
     <!--ABOUT-->
-    <section class="section" id="about">
+    <section id="about" class="section" >
       <div class="container grid">
         <div class="image">
           <img src="https://images.unsplash.com/photo-1559599101-f09722fb4948?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80" alt="3 mulheres sorrindo">
@@ -84,7 +85,7 @@
     <div class="divider-2"></div>
 
     <!--SERVICES-->
-    <section class="section" id="services">
+    <section id="services" class="section">
       <div class="container grid">
         <header>
           <h2 class="title">Serviços</h2>
@@ -116,7 +117,7 @@
     <div class="divider-1"></div>
 
     <!--TESTIMONIALS-->
-    <section class="section" id="testimonials">
+    <section id="testimonials" class="section" >
       <div class="container">
         <header>
           <h2 class="title">Depoimentos de quem já passou por aqui</h2>
@@ -169,26 +170,41 @@
       </div>
     </section>
 
+    <div class="divider-2"></div>
+
     <!--CONTACT-->
-    <section class="section" id="contact">
+    <section id="contact" class="section" >
       <div class="container grid">
 
 
         <div class="text">
-          <h2>Entre em contato com a gente</h2>
+          <h2 class="title">Entre em contato com a gente</h2>
           <p>Entre em contato com a Beautsalon, queremos tirar suas dúvidas, ouvir suas críticas e sugestões</p>
-          <a href="#"><i class="icon-whatsapp"></i> Entrar em contato</a>
+          <a href="https://api.whatsapp.com/send?phone=+558699229082&text=Oi! Gostaria de agendar um horário"
+          class="button"
+          target="_blank"
+          ><i class="icon-whatsapp"></i> Entrar em contato</a>
         </div>
 
+        <div class="links">
+          <ul class="grid">
+            <li><i class="icon-phone"></i> 11 99845-6754</li>
+            <li><i class="icon-map-pin"></i> R. Amauri Souza, 346</li>
+            <li><i class="icon-mail"></i> contato@beautysalon.com</li>
+          </ul>
+        </div>
 
       </div>
     </section>
     
   </main>
-    <!--SWIPER-->
+  <!--SWIPER-->
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
-    <!--MAIN-JS-->
+  <!--SCROLL-REVEAL-->
+  <script src="https://unpkg.com/scrollreveal"></script>
+
+  <!--MAIN-JS-->
   <script src="/js/main.js"></script>
 
 </body>
