@@ -1,4 +1,4 @@
-/*open and close the menu by clicking on the icon*/
+/* open and close the menu by clicking on the icon */
 const nav  = document.querySelector('#header nav')
 const toggle = document.querySelectorAll('nav .toggle')
 
@@ -8,7 +8,7 @@ for(const element of toggle) {
   })
 }
 
-/*when clicking on a menu item, hide the entire menu*/
+/* when clicking on a menu item, hide the entire menu */
 const links = document.querySelectorAll('nav ul li a')
 
 for(const link of links) {
@@ -17,19 +17,19 @@ for(const link of links) {
   })
 }
 
-/*change the page header when scrolling*/
-const header = document.querySelector('#header')
-const navHeight = header.offsetHeight
+/* change the page header when scrolling */
+function changeHeaderWhenScroll() {
+  const header = document.querySelector('#header')
+  const navHeight = header.offsetHeight
 
-window.addEventListener('scroll', function() {
   if(window.scrollY >= navHeight) {
     header.classList.add('scroll')
   } else {
     header.classList.remove('scroll')
   }
-})
+}
 
-/* Testimonials carousel slider swiper */
+/* testimonials carousel slider swiper */
 const swiper = new Swiper('.swiper-container', {
   slidePerView: 1,
   pagination: {
@@ -39,7 +39,7 @@ const swiper = new Swiper('.swiper-container', {
   keyboard: true
 });
 
-/* ScrollReveal show elements to page*/
+/* scrollReveal show elements to page */
 const scrollReveal = ScrollReveal({
   origin: 'top',
   distance: '30px',
@@ -48,11 +48,30 @@ const scrollReveal = ScrollReveal({
 });
 
 scrollReveal.reveal(
-  `#home .image, #home .text,
+  `
+  #home .image, #home .text,
   #about .image, #about .text,
   #services header, #services .card,
   #testimonials header, #testimonials .testimonails,
-  #contact .text, #contact .links
+  #contact .text, #contact .links,
+  footer .brand, footer .social
   `,
   { interval: 100 }
   )
+
+/* back up button */
+function backToTop() {
+  const backToTopButton = document.querySelector('.back-to-top')
+
+  if(this.window.scrollY >= 560) {
+    backToTopButton.classList.add('show')
+  } else {
+    backToTopButton.classList.remove('show')
+  }
+}
+
+/* when scroll */
+window.addEventListener('scroll', function() {
+  changeHeaderWhenScroll()
+  backToTop()
+})

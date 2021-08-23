@@ -105,3 +105,25 @@ nav.show div.icon-close{
 #header.scroll {
   box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.15);
 }
+
+/* responsive */
+@media (min-width: 1200px) {
+  nav .menu {
+    opacity: 1;
+    visibility: visible;
+    top: 0;
+  }
+
+  nav .menu ul {
+    display: flex;
+    gap: 2rem;
+  }
+
+  nav .menu ul li a.title {
+    font: 400 1rem var(--body-font);
+  }
+
+  nav .menu ul li a {
+
+  }
+}
