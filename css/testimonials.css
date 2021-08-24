@@ -46,3 +46,16 @@
   clip-path: circle();
   margin-right: 00.25rem;
 }
+
+/* responsive */
+@media (min-width: 1200px) {
+  #testimonials .container{
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #testimonials .container header{
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

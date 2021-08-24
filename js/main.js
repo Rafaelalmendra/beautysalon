@@ -36,7 +36,13 @@ const swiper = new Swiper('.swiper-container', {
     el: '.swiper-pagination'
   },
   mousewheel: true,
-  keyboard: true
+  keyboard: true,
+  breakpoints: {
+    767: {
+      slidesPerView: 2,
+      setWrapperSize: true 
+    }
+  }
 });
 
 /* scrollReveal show elements to page */
@@ -68,7 +74,13 @@ function backToTop() {
   } else {
     backToTopButton.classList.remove('show')
   }
+
+/* menu active */
+const sections = document.querySelectorAll('section[id]')
+function activateMenuAtCurrentSection() {
+  
 }
+
 
 /* when scroll */
 window.addEventListener('scroll', function() {

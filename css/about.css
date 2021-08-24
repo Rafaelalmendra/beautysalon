@@ -37,3 +37,11 @@
 .section header strong{
   color: var(--base-color);
 }
+
+/* responsive */
+@media (min-width: 1200px) {
+  #about .container {
+    margin: 0 auto;
+    grid-auto-flow: column;
+  }
+}

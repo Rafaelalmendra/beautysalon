@@ -123,7 +123,7 @@ nav.show div.icon-close{
     font: 400 1rem var(--body-font);
   }
 
-  nav .menu ul li a {
-
+  nav .icon-menu {
+    display: none;
   }
 }

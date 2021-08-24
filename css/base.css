@@ -83,7 +83,7 @@ img {
 }
 
 .title {
-  font: 700 1.875rem var(--title-font);
+  font: 700 var(--title-font-size) var(--title-font);
   color: var(--title-color);
   -webkit-font-smoothing: auto;
 }
@@ -95,11 +95,22 @@ img {
 
 /* responsive */
 @media (min-width: 1200px) {
+  main {
+    margin-top: var(--header-height);
+  }
+
   .section {
     padding: 10rem 0;
   }
 
-  main {
-    margin-top: var(--header-height);
+  .button {
+    height: 3.125rem;
+  }
+
+  .section header {
+    max-width: 32rem;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
   }
 }

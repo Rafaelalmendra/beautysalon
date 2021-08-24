@@ -24,3 +24,15 @@
 #contact ul li i{
   color: var(--base-color);
 }
+
+/* responsive */
+@media (min-width: 1200px) {
+  #contact .container {
+    grid-auto-flow: column;
+    align-items: center;
+  }
+
+  #contact .text {
+    max-width: 25rem;
+  }
+}
