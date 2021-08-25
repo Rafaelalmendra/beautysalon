@@ -2,6 +2,10 @@ html {
   scroll-behavior: smooth;
 }
 
+html, body {
+  overflow-x: hidden;
+}
+
 body {
   font: 400 1rem var(--body-font);
   color: var(--text-color);
@@ -97,6 +101,12 @@ img {
 @media (min-width: 1200px) {
   main {
     margin-top: var(--header-height);
+  }
+
+  .container {
+    max-width: 1120px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .section {

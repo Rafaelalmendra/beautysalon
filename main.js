@@ -22,6 +22,7 @@ const header = document.querySelector('#header')
 const navHeight = header.offsetHeight
 
 function changeHeaderWhenScroll() {
+  
   if(window.scrollY >= navHeight) {
     header.classList.add('scroll')
   } else {
@@ -40,10 +41,10 @@ const swiper = new Swiper('.swiper-container', {
   breakpoints: {
     767: {
       slidesPerView: 2,
-      setWrapperSize: true 
+      setWrapperSize: true,
     }
   }
-});
+})
 
 /* scrollReveal show elements to page */
 const scrollReveal = ScrollReveal({
@@ -51,14 +52,14 @@ const scrollReveal = ScrollReveal({
   distance: '30px',
   duration: 700,
   reset: true
-});
+})
 
 scrollReveal.reveal(
   `
   #home .image, #home .text,
   #about .image, #about .text,
   #services header, #services .card,
-  #testimonials header, #testimonials .testimonails,
+  #testimonials header, #testimonials .testimonails
   #contact .text, #contact .links,
   footer .brand, footer .social
   `,
